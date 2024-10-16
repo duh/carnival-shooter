@@ -1,6 +1,6 @@
 
 # carnival-shooter
-Carnival style shooter game!
+Carnival style shooter game!<br>
 I developed this game as part of a Web Tech project at uni in a team of 2.
 [🎮 Play here!](https://duh.github.io/carnival-shooter/)
 

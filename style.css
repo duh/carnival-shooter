@@ -1,0 +1,315 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.homepage {
+    background-image: url("media/landing_bg.jpg");
+    /*Takes an image from the media folder to use as background*/
+    /*Image credit: https://www.pinterest.co.uk/pin/371476669274292558/ */
+}
+
+/* MENU CSS */
+#landing {
+    /* Centres the box in the middle of the page*/
+    border: 2px solid;
+    border-radius: 20px;
+    background-color: burlywood;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+#menuButtons {
+    text-align: center;
+    font-size: x-large;
+}
+
+.menuButton {
+    padding: 10px 20px;
+    border: 2px solid rgb(102, 74, 38);
+    background-color: rgb(243, 224, 198);
+    transition-duration: 0.3s; /* Smooth colour change */
+}
+
+.menuButton:hover {
+    /*Sets the colour of the bottons to change when hovered over*/
+    background-color: rgb(214, 33, 33);
+    color: white;
+    cursor: pointer;
+
+}
+
+/* Reduce top margin of headers to make it vertically aligned */
+#landing h1,
+#header h1 {
+    margin-top: 5px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+#landing p {
+    font-size: larger;
+    text-align: center;
+}
+
+#leaderboardButton {
+    margin-top: 8px;
+}
+
+/* GAME CSS */
+#world {
+    position: relative;
+    overflow: hidden;
+    /* Elements should not be able to go outside the div and should not be visible if they pass the borders */
+    width: 90vw;
+    height: 80vh;
+    margin: 10px auto;
+    background-image: url(media/sky.jpg);
+    border: 1px solid rgb(46, 46, 46);
+    cursor: url(media/crosshair.cur), pointer;
+    /* Cursor credit: http://www.rw-designer.com/cursor-library */
+}
+
+.gamePanel {
+    background-color: white;
+    position: absolute;
+    padding: 10px;
+}
+
+#stats
+
+/* Bottom right of score stats border should be curved */
+    {
+    left: 0%;
+    border-bottom-right-radius: 10px;
+}
+
+#timer
+
+/* Bottom right of timer border should be curved */
+    {
+    right: 0%;
+    border-bottom-left-radius: 10px;
+}
+
+/* For targets of 200px */
+.largetarget {
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: -200px;
+    bottom: 40%;
+}
+
+.smalltarget {
+    background-size: contain;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: -150px;
+    bottom: 40%;
+}
+
+.largetarget:hover {
+    cursor: url(media/angry_crosshair.cur), pointer;
+}
+
+/* Classes for images; */
+.dartboard {
+    background-image: url(media/target.png);
+}
+
+.enemydartboard {
+    background-image: url(media/badtarget.png);
+}
+
+.water {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+#timeLeft {
+    font-weight: bold;
+}
+
+body {
+    background-image: url(media/landing_bg.jpg);
+    margin: 0;
+    /* Added to remove default body margin */
+    padding: 0;
+
+}
+
+#header {
+    width: min-content;
+    background-color: burlywood;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 20px;
+    border: 5px solid;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Style for the form container */
+#end-game-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 4;
+    transform: translate(-50%, -50%);
+    background-color: burlywood;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Style for the form heading */
+#end-game-form h2 {
+    margin-bottom: 20px;
+}
+
+/* Style for form inputs */
+#score-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#score-form input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for the submit button */
+#score-form button {
+    padding: 10px 20px;
+    background-color: #875c49;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#score-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Leaderboard CSS */
+body {
+    background-image: url("media/landing_bg.jpg");
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+#homeButton {
+    text-align: center;
+    font-size: x-large;
+    padding: 10px 20px;
+    border: 2px solid rgb(102, 74, 38);
+    background-color: rgb(243, 224, 198);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition-duration: 0.3s; /* Smooth colour change */
+}
+
+#homeButton:hover {
+    /*Sets the colour of the bottons to change when hovered over*/
+    background-color: rgb(214, 33, 33);
+    color: white;
+    cursor: pointer;
+}
+
+#leaderboards>div {
+    display: inline-block;
+    vertical-align: top;
+    /* Align tables at the top */
+    width: calc(50% - 20px);
+    /* Adjust width to fit two tables with some gap */
+    margin: 10px;
+}
+
+
+.boardContainer {
+    margin-bottom: 20px;
+    /* Adjust the margin to set the desired gap */
+}
+
+.board {
+    background-color: burlywood;
+    border: thick solid #321E1A;
+    border-radius: 25px;
+    width: 80%;
+    max-width: 800px;
+    height: max-content;
+    padding: 10px;
+    margin: 5px auto;
+    /* Center the .board horizontally */
+}
+
+#leaderboards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Align items to the start of the cross axis */
+    height: 50vh;
+    /* Set a height to make sure it occupies the full height of the viewport */
+    flex-wrap: wrap;
+    /* Allow items to wrap onto the next line */
+    flex-direction: row;
+    /* Display items horizontally */
+}
+
+table.leaderboard {
+    border-collapse: collapse;
+    background-color: burlywood;
+    margin: 10px;
+    /* Adjust margin for spacing between tables */
+    flex: 1;
+    /* Distribute remaining space evenly among tables */
+}
+
+table.leaderboard th,
+table.leaderboard td {
+    border: 1px solid #321E1A;
+    padding: 5px;
+    width: 150px;
+    max-width: 150px;
+    word-wrap: break-word;
+}
+
+.leaderboardTitle {
+    background-color: burlywood;
+    border: 2px solid #321E1A;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 auto;
+    /* Center the .leaderboardTitle horizontally */
+}
+
+@media (max-width: 1200px) {
+    #leaderboards>div {
+        width: 100%;
+        /* Set the width to 100% for smaller screens */
+    }
+
+    #homeButton {
+        position: static;
+        margin: 5px;
+        /* Add some margin to separate from the edge */
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <button id="homeButton">Home</button> <!-- Added button for home -->
+    <div class="board">
+        <h1>Leaderboard</h1>
+    </div>
+
+    <div id="leaderboards">
+        <div>
+            <h1 class="leaderboardTitle">Easy</h1>
+            <table class="leaderboard" id="easyLeaderboard">
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                    <th>Date</th>
+                    <th>Shot Accuracy</th>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h1 class="leaderboardTitle">Hard</h1>
+            <table class="leaderboard" id="hardLeaderboard">
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                    <th>Date</th>
+                    <th>Shot Accuracy</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+<script src="leaderboard.js"></script>
+
+</html>

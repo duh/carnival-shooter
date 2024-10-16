@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Mode | Carnival Shooter!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>Easy Mode</h1>
+        <p>
+            Hit as many targets as you can before time runs out! 
+            <br>The quicker you react the more points you get.
+        </p>
+    </div>
+    <div id="world">
+        <span class="gamePanel" id="stats">
+            Score: <span id="score">0</span>
+            |
+            High Score: <span id="highScore">0</span>
+        </span>
+        <span class="gamePanel" id="timer">
+            Time Left: <span id="timeLeft">60</span>
+        </span>
+
+        <div id="end-game-form" style="display: none;">
+            <h2>Game Over!</h2>
+            <form id="score-form">
+                <label for="player-name">Enter your name:</label>
+                <input type="text" id="player-name" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+<script src="level1.js"></script>
+
+</html>
